@@ -1,0 +1,295 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-image: url(img/banner8.png);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header h3{
+    margin: 0;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#carrito-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#carrito-nav button {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito-nav button:hover {
+    background-color: #495057;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80%;
+    overflow-y: auto;  /* Permite hacer scroll en el modal si el contenido es largo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#carrito-nav button {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito-nav button:hover {
+    background-color: #495057;
+}
+
+button.agregar-carrito {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button.agregar-carrito:hover {
+    background-color: #218838;
+}
+
+#vaciar-carrito, #realizar-pedido {
+    background-color: #e03e2d;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover, #realizar-pedido:hover {
+    background-color: #c32f1e;
+}
+
+#lista-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#carrito-nav button {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito-nav button:hover {
+    background-color: #495057;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+}
+
+#productos {
+    background: linear-gradient(135deg,rgba(211, 211, 211, 1) 25%, rgba(255, 255, 255, 1) 50%,rgba(0, 0, 0, 1)100%);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#productos, #reseñas, #contacto {
+    margin-bottom: 3rem;
+}
+
+.sofa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sofa-item {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sofa-item img {
+    max-width: 100%;  /* Asegura que la imagen no sobrepase el ancho de su contenedor */
+    height: 300px;    /* Ajusta la altura de todas las imágenes a 300px (puedes cambiar este valor según lo necesites) */
+    object-fit: cover; /* Esto asegura que la imagen se recorte y mantenga su proporción */
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.sofa-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.sofa-item p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Estilo para el botón de agregar al carrito */
+button.agregar-carrito {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button.agregar-carrito:hover {
+    background-color: #218838;
+}
+
+
+.reseñas-container, .locales, .nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.reseña-item, .locales-item, .nosotros-item {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #495057;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
